@@ -1,0 +1,303 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #243247;
+  background: #f5f8fc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+}
+
+.navbar h2 {
+  color: #087f8c;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #243247;
+}
+
+button {
+  padding: 12px 20px;
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #e3f5f5;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.secondary {
+  margin-left: 10px;
+  background: white;
+  color: #087f8c;
+  border: 1px solid #087f8c;
+}
+
+.services {
+  padding: 55px 7%;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000010;
+}
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #087f8c;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+
+.About-us {
+  padding: 50px 6%;
+  background-color: #f8faf6;
+}
+
+.About-us h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #234b2b;
+ 
+  margin-top:20px;
+}
+
+.category-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #234b2b;
+  margin-top:25px;
+  margin-bottom :25px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.fruit {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  margin-bottom:25px;
+  
+}
+
+.fruit:hover {
+  transform: translateY(-5px);
+}
+
+.fruit h5 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.fruit img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fruit p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.Vegetables {
+  margin-top:25px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+/* Container for all vegetable cards */
+.about-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual vegetable container */
+.vegetable {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.vegetable:hover {
+  transform: translateY(-5px);
+}
+
+/* Vegetable image */
+.vegetable img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Vegetable name */
+.vegetable h5 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Vegetable description */
+.vegetable p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* seeds */
+.seeds{
+  text-align:center;
+font-size:20px;
+margin-top:20px;
+margin-bottom:20px;
+color: #2e7d32;
+
+}
+.seed {
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.seed:hover {
+  transform: translateY(-5px);
+}
+ 
+.seed h5 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.seed img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.seed p {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .seed {
+    width: 100%;
+    max-width: 300px;
+  }
+}
